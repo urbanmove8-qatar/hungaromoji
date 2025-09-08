@@ -34,4 +34,4 @@ You can find the source code for this project on GitHub: **[https://github.com/u
 1. Include the script in your HTML file:
 
 ```html
-<script src="[https://urbanmove8.neocities.org/emoji.js](https://urbanmove8.neocities.org/emoji.js)"></script>
+<script src="https://urbanmove8.neocities.org/emoji.js"></script>
