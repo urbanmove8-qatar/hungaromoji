@@ -2,7 +2,7 @@ HUNGAROMOJI ARCHIVES – FULL CREDITS
 ===================================
 
 Project Name: Hungaromoji
-Versions: v0.6 (archived), v0.7 (archived), v0.7.1 (current)
+Versions: v0.6 (archived), v0.7 (archived), v0.7.1 (archived), v0.7.2 (archived), v0.7.3 (current)
 Developer: Urbanmove 8 Qatar Sole Prop.
 Years: 2023–2025
 License: Apache License, Version 2.0
