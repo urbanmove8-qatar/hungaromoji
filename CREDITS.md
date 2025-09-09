@@ -2,9 +2,9 @@ HUNGAROMOJI ARCHIVES – FULL CREDITS
 ===================================
 
 Project Name: Hungaromoji
-Versions: v0.6 (archived), v0.7 (archived), v0.7.1 (archived), v0.7.2 (archived), v0.7.3 (current)
+Versions: v0.6-v0.7.3 (archived), v0.7.4 (current)
 Developer: Urbanmove 8 Qatar Sole Prop.
-Years: 2023–2025
+Years: 2025
 License: Apache License, Version 2.0
 URL: http://www.apache.org/licenses/LICENSE-2.0
 
@@ -67,7 +67,7 @@ SPECIAL ASSETS
 --------------------------------------------------
 LICENSE
 --------------------------------------------------
-Hungaromoji © 2023–2025 Urbanmove 8 Qatar Sole Prop.
+Hungaromoji © 2025 Urbanmove 8 Qatar Sole Prop.
 Licensed under the Apache License, Version 2.0.
 You may not use this file except in compliance with the License.
 http://www.apache.org/licenses/LICENSE-2.0
