@@ -2,7 +2,7 @@ HUNGAROMOJI ARCHIVES – FULL CREDITS
 ===================================
 
 Project Name: Hungaromoji
-Versions: v0.6-v0.8.3 (archived), v0.8.4 (current)
+Versions: v0.6-v0.9 (archived), v0.9.1 (current)
 Developer: Urbanmove 8 Qatar Sole Prop.
 Years: 2025
 License: Apache License, Version 2.0
@@ -73,8 +73,8 @@ You may not use this file except in compliance with the License.
 http://www.apache.org/licenses/LICENSE-2.0
 
 Notes:
-- v0.6 - v0.8.3 is archived but can still be used freely.
-- v0.8.4 is the active version with added emojis and minor removals.
+- v0.6 - v0.9 is archived but can still be used freely.
+- v0.9.1 is the active version with added emojis and minor removals.
 - Original credits must always be preserved when reusing any part of this project.
 
 --------------------------------------------------
