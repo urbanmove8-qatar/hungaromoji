@@ -17,7 +17,7 @@ You can find the source code for this project on GitHub: **[https://github.com/u
 ## Features
 
 - Replaces standard and custom emojis with images.
-- Supports **Hungarian-specific emojis**, including flags, metro logos, money, and book covers.
+- Supports **Hungarian-specific emojis**, including flags, money, book covers and others.
 - Works on **page load** and automatically updates **dynamic content** using a `MutationObserver`.
 - Lightweight and easy to integrate into any webpage.
 - Inline images scale with text (`1em x 1em`) for clean alignment.
