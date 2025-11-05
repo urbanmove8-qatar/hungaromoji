@@ -39,4 +39,7 @@ You can find the source code for this project on GitHub: **[https://github.com/u
 <script src="https://urbanmove8.neocities.org/emoji.js"></script>
 ```
 
-2. If you want a single JavaScript file, you can also use: `<script>` or `<script src="#"></script>`
+2. If you want a single JavaScript file, you can also use:
+```html
+<script src="path/to/your/js"></script>
+```
