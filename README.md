@@ -1,5 +1,7 @@
 # Hungaromoji
 
+<img width="274" height="257" alt="image" src="https://github.com/user-attachments/assets/986f3416-fd22-4e2c-bf50-2bd04fa001d3" />
+
 A **JavaScript-based emoji replacer** for PyQt technology and websites.
 
 **Hungaromoji** is a custom emoji replacer script made for **Urbanmove 8** and related web projects. It replaces text emojis with custom image emojis, including Hungarian flags, books, transportation icons, and more. Perfect for live chats, web pages, or any dynamic content where you want that UB8 vibe.
