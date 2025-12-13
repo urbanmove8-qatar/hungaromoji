@@ -232,7 +232,6 @@ the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDIT
         "🐥": "https://library.penguinmod.com/files/emojis/chick.png",
         "🤯": "https://library.penguinmod.com/files/emojis/mindblown.png",
         "🌈": "https://library.penguinmod.com/files/emojis/rainbow.png",
-        "🏳️‍🌈": "https://library.penguinmod.com/files/emojis/pride.png",
         "😓": "https://library.penguinmod.com/files/emojis/nervous.png",
         "📖": "https://urbanmove8.neocities.org/emojis/openedbook.png",
         "🛩️": "https://urbanmove8.neocities.org/emojis/smallplane.png",
@@ -391,7 +390,7 @@ the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDIT
         "🕶️": "https://urbanmove8.neocities.org/emojis/napszemuveg.png",
         "🚲": "https://urbanmove8.neocities.org/emojis/bicikli.png",
         "👕": "https://urbanmove8.neocities.org/emojis/ferfipolo.png",
-        "🎟": "https://urbanmove8.neocities.org/emojis/mozijegy.png",
+        "🎫": "https://urbanmove8.neocities.org/emojis/mozijegy.png",
 
     };
 
