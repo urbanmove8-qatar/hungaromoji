@@ -11,6 +11,7 @@ A **JavaScript-based emoji replacer** for PyQt/PySide, Qt, Electron and websites
 ## Repository
 
 You can find the source code for this project on GitHub: **[https://github.com/urbanmove8-qatar/hungaromoji](https://github.com/urbanmove8-qatar/hungaromoji)**
+HungaromojiRetró: **[https://github.com/urbanmove8-qatar/hungaromoji](https://github.com/urbanmove8-qatar/hungaromojiretro)**
 
 ---
 
