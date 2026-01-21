@@ -84,7 +84,7 @@ the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDIT
         "🤷": "https://library.penguinmod.com/files/emojis/idk.png",
         "🍫": "https://urbanmove8.neocities.org/kekhegy/kepek/sportcsoki.png",
         "🔞": "https://urbanmove8.neocities.org/kekhegy/kepek/18plusz.png",
-        "🚌": "https://urbanmove8.neocities.org/emojis/credoeconell12.png",
+        "🚌": "https://urbanmove8.neocities.org/emojis/credoeconell12%20(1).png",
         "🚂": "https://urbanmove8.neocities.org/kekhegy/kepek/mav43.png",
         // "Ⓜ️": "https://upload.wikimedia.org/wikipedia/commons/f/fb/BKV_metro.svg",
         // "BPIM1": "https://urbanmove8.neocities.org/kekhegy/kepek/metro1.png",
