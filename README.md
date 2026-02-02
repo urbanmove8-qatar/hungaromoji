@@ -31,8 +31,10 @@ Unlike “black box” closed-source software that demands personal data or ID v
 
 ## 📂 Repositories
 
-- **Main Engine:** [github.com/urbanmove8-qatar/hungaromoji](https://github.com/urbanmove8-qatar/hungaromoji)  
-- **Hungaromoji Retró:** [github.com/urbanmove8-qatar/hungaromojiretro](https://github.com/urbanmove8-qatar/hungaromojiretro)  
+- **Main Engine:** [github.com/urbanmove8-qatar/hungaromoji](https://github.com/urbanmove8-qatar/hungaromoji)
+  The current standard representing modern Hungarian life.
+- **Hungaromoji Retró:** [github.com/urbanmove8-qatar/hungaromojiretro](https://github.com/urbanmove8-qatar/hungaromojiretro)
+  The "1998 Edition" — A specialized version that brings back the nostalgic vibe of the late 90s.
 
 ---
 
