@@ -1,46 +1,65 @@
 # Hungaromoji
 
-<img width="274" height="257" alt="image" src="https://github.com/user-attachments/assets/986f3416-fd22-4e2c-bf50-2bd04fa001d3" />
+![Hungaromoji Logo](https://github.com/user-attachments/assets/986f3416-fd22-4e2c-bf50-2bd04fa001d3)
 
-A **JavaScript-based emoji replacer** for PyQt/PySide, Qt, Electron and websites.
+**The Definitive Open-Source Hungarian Emoji Engine**
 
-**Hungaromoji** is a custom emoji replacer script made for **Urbanmove 8** and related web projects. It replaces text emojis with custom image emojis, including Hungarian flags, books, transportation icons, and more. Perfect for live chats, web pages, or any dynamic content where you want that hungarian vibe.
-
----
-
-## Repository
-
-You can find the source code for this project on GitHub: **[https://github.com/urbanmove8-qatar/hungaromoji](https://github.com/urbanmove8-qatar/hungaromoji)**
-HungaromojiRetró: **[https://github.com/urbanmove8-qatar/hungaromoji](https://github.com/urbanmove8-qatar/hungaromojiretro)**
+Hungaromoji is a high-performance, non-intrusive JavaScript engine developed by the **Urbanmove 8** team.  
+It is designed to modernize the visual experience of **PyQt/PySide, Qt, Electron, and web-based platforms** by replacing standard text emojis with custom, high-fidelity **Hungarian-themed assets**.
 
 ---
 
-## Features
+## 🛡️ Security & Transparency
 
-- Replaces standard and custom emojis with images.
-- Supports **Hungarian-specific emojis**, including flags, money, book covers and others.
-- Works on **page load** and automatically updates **dynamic content** using a `MutationObserver`.
-- Lightweight and easy to integrate into any webpage.
-- Inline images scale with text (`1em x 1em`) for clean alignment.
+Unlike “black box” closed-source software that demands personal data or ID verification, Hungaromoji is built on the core principles of **digital freedom**:
 
----
-
-## Apache Licence 2.0
-
-[Credits](https://github.com/urbanmove8-qatar/hungaromoji/blob/main/CREDITS.md)
-[Licence](https://github.com/urbanmove8-qatar/hungaromoji/blob/main/LICENSE)
+- **Fully Auditable:** Our code is 100% open-source and hosted on GitHub for public review.  
+- **Privacy-Centric:** The script operates purely in the browser’s DOM. It does not collect personal data, track user behavior, or require government-issued identification.  
+- **No System Interference:** Hungaromoji is a safe, front-end script. It does not touch system registries, kernel files, or external hardware.  
 
 ---
 
-## Installation
+## ✨ Features
 
-1. Include the script in your HTML file (it updates automatically):
+- **Cultural Authenticity:** Supports unique Hungarian emojis, including the 100 HUF banknote, MÁV transport icons (Bzmot), and traditional book covers.  
+- **Dynamic Real-Time Updates:** Utilizes a high-performance MutationObserver to automatically process new content without manual refreshes.  
+- **Optimized Performance:** Uses WeakSet node tracking and regex pre-compilation to ensure zero lag and prevent layout thrashing.  
+- **Historical Tribute:** Features an integrated tribute to the heroes of the 1956 Revolution, ensuring software remains a tool for remembrance and freedom.  
+- **Fluid Layouts:** Inline images are CSS-optimized to scale perfectly with text typography (1.1em).  
+
+---
+
+## 📂 Repositories
+
+- **Main Engine:** [github.com/urbanmove8-qatar/hungaromoji](https://github.com/urbanmove8-qatar/hungaromoji)  
+- **Hungaromoji Retró:** [github.com/urbanmove8-qatar/hungaromojiretro](https://github.com/urbanmove8-qatar/hungaromojiretro)  
+
+---
+
+## 📜 Licensing
+
+This project is licensed under the **Apache License 2.0**.  
+
+- [View Credits](https://github.com/urbanmove8-qatar/hungaromoji/blob/main/CREDITS.md)  
+- [View License](https://github.com/urbanmove8-qatar/hungaromoji/blob/main/LICENSE)  
+
+---
+
+## 🛠️ Installation
+
+### 1. Direct CDN Integration (Recommended)
+
+Add this to your HTML `<head>` or before the closing `</body>` tag for automatic updates:
 
 ```html
+<!-- Hungaromoji Engine - Transparent & Open Source -->
 <script src="https://urbanmove8.neocities.org/emoji.js"></script>
 ```
+### 2. Local Deployment
+If you prefer to host the script within your own infrastructure:
 
-2. If you want a single JavaScript file, you can also use:
 ```html
-<script src="path/to/your/js"></script>
+<script src="js/hungaromoji.v0.9.6.js"></script>
 ```
+
+“Szabadság és függetlenség!” — The Urbanmove 8 Team
