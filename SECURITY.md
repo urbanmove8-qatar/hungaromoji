@@ -43,4 +43,4 @@ If you discover a security flaw or have a technical concern, please do not use p
 
 We welcome technical audits from legitimate security researchers. However, false claims of "malware" or "spyware" without supporting technical evidence will be treated as **libel**. Our code is open; if you claim it is a virus, point to the line of code or stay silent.
 
-**Urbanmove 8 Qatar Sole Prop.** *Defending Open Source since 2025\.*
+**Urbanmove 8 Qatar Sole Prop. and Urbanmove 8 Kft.** *Defending Open Source since 2025\.*
