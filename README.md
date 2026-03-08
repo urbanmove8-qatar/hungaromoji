@@ -55,7 +55,7 @@ Add this to your HTML `<head>` or before the closing `</body>` tag for automatic
 
 ```html
 <!-- Hungaromoji Engine - Transparent & Open Source -->
-<script src="https://urbanmove8.neocities.org/emoji.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/urbanmove8-qatar/hungaromoji/emoji.js"></script>
 ```
 ### 2. Local Deployment
 If you prefer to host the script within your own infrastructure:
