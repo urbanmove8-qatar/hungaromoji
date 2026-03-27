@@ -1,43 +1,29 @@
 /*
-Hungaromoji v0.9.6.0
-Copyright © 2025 Urbanmove 8 Qatar Sole Prop.
-All rights reserved.
-
-────────────────────────────────────────────
-Emoji Assets:
-• Original emoji artwork and base assets © Penguinmod.com — Licensed under the MIT License.
-• All images, animations, and source code are distributed under the MIT License.
-• Modification and redistribution permitted under MIT terms, with original credit required.
-
-────────────────────────────────────────────
-Other Assets and References:
-• Book excerpts © Móra Könyvkiadó & feketeistvan.hu — Minden jog fenntartva.
-• OMSZ logo & STOP sign © Wikimedia Commons — Public domain / All rights reserved.
-• 100 Hungarian Forint image © Magyar Nemzeti Bank — Minden jog fenntartva.
-• Haragos Pista © Univer Csoport — Minden jog fenntartva.
-• Hévíz boat photo © Balatoni Hajózás Zrt. (BAHART), via Hungarian Wikipedia — Minden jog fenntartva.
-• Bus stop sign © KRESZ official materials — Minden jog fenntartva.
-• Train images (e.g., Bzmot) © MÁV Zrt. — Minden jog fenntartva.
-• Jászkeszeg fish image by Kristian Kostov, Wikipedia — CC BY 3.0 (modified)
-• OMSZ logo by OMSZ (uploaded by Madboy74), Wikimedia Commons — CC BY 4.0
-• Góbé Plane Emoji by Regasterios, Wikipedia — CC BY-SA 3.0
-• Tu-154 Malév plane image by Fæ, Wikipedia — GFDL 1.2
-• Negro image by Metsavend, Wikipedia — CC BY-SA 4.0
-• Budgerigar image by Flickr Upload Bot, Wikipedia — CC BY-SA 2.0
-and more!
-
-────────────────────────────────────────────
-License Information:
-This project is licensed under the Apache License, Version 2.0 (the “License”);
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at:
-
-    http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software distributed under
-the License is distributed on an “AS IS” BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND.
-────────────────────────────────────────────
-*/
+ * Hungaromoji v0.9.6.0
+ * Copyright © 2025-2026 Urbanmove 8 Qatar Sole Prop. and Urbanmove 8 Kft.
+ * * This project is licensed under the Apache License, Version 2.0 (the "License").
+ * You may obtain a copy of the License at: http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * ──────────────────────────────────────────────────────────────────────────
+ * ASSET CREDITS & LICENSING:
+ * * CODE & LOGIC:
+ * • Licensed under the Apache License, Version 2.0.
+ *
+ * EMOJI BASE ASSETS:
+ * • Original emoji artwork and base assets © Penguinmod.com.
+ * • These specific assets are distributed under the Creative Commons Zero (CC0) 
+ * license (Public Domain).
+ *
+ * THIRD-PARTY MEDIA (Fair Use / Educational / Reference):
+ * • Note: The following assets are the property of their respective owners. 
+ * Usage in this project is for identification/cultural reference:
+ * - MÁV Zrt. (Trains), MNB (Currency), Univer (Haragos Pista), 
+ * BAHART (Hévíz boat), Móra Könyvkiadó (Book excerpts).
+ * • Creative Commons Assets:
+ * - Jászkeszeg (CC BY 3.0), OMSZ Logo (CC BY 4.0), Negro (CC BY-SA 4.0), 
+ * Budgerigar (CC BY-SA 2.0).
+ * ──────────────────────────────────────────────────────────────────────────
+ */
 
 (function() {
     const emojiMap = {
