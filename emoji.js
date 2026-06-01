@@ -410,12 +410,12 @@
     };
 
     const SECRET_HUNGARIAN_MESSAGE = "Szabadság és függetlenség! 1956. október 23.";
-    const SECRET_HUNGARIAN_EMOJI_SAGA_1956 = "🇭🇺 Szabadság és függetlenség! 1956. október 23. A forradalom lángja fellobbant a kommunista zsarnokság ellen... (Truncated for brevity)";
+    const SECRET_HUNGARIAN_EMOJI_SAGA_1956 = " Szabadság és függetlenség! 1956. október 23. A forradalom lángja fellobbant a kommunista zsarnokság ellen... (Truncated for brevity)";
     const EASTER_EGG_DAY = 23;
     const EASTER_EGG_MONTH = 9;
 
     // --- UEFA BUDAPEST 2026 FINALS EASTER EGG ---
-    const UEFA_SIGN_TEXT = "%c 🇭🇺 HAJRÁ MAGYAROK! ⚽ UEFA Budapest '26 Finals! 🇭🇺 ";
+    const UEFA_SIGN_TEXT = "%c  HAJRÁ MAGYAROK! ⚽ UEFA Budapest '26 Finals!  ";
     const UEFA_SIGN_STYLE = `
         color: white;
         background: linear-gradient(to right, #ce2939 33%, #ffffff 33%, #ffffff 66%, #477050 66%);
@@ -434,7 +434,7 @@
     const FORBIDDEN = /SCRIPT|STYLE|TEXTAREA|INPUT|NOSCRIPT|CANVAS|VIDEO|CODE|PRE/i;
     const processedNodes = new WeakSet();
 
-    // 2. CSS-Based Styling (Updated for perfect text selection using <img>)
+    // 2. CSS-Based Styling (Updated for bulletproof TTS/Screen Reader protection)
     function injectStyles() {
         if (document.getElementById('hungaromoji-speed-styles')) return;
         const style = document.createElement('style');
@@ -442,20 +442,52 @@
         style.textContent = `
             .h-mojis {
                 display: inline-block !important;
+                position: relative !important;
                 width: 1.1em !important;
                 height: 1.1em !important;
+                max-width: 1.1em !important;
                 vertical-align: -0.15em !important;
                 margin: 0 0.05em !important;
                 border: none !important;
                 background: transparent !important;
+                flex-shrink: 0 !important;
             }
-            /* Fast CSS selectors for styling instead of getComputedStyle */
+
+            /* Pseudo-element strictly handles the visual image, immune to TTS text highlighting */
+            .h-mojis::before {
+                content: "" !important;
+                position: absolute !important;
+                top: 0 !important; left: 0 !important;
+                width: 100% !important; height: 100% !important;
+                background-image: var(--h-emoji-bg) !important;
+                background-size: contain !important;
+                background-position: center !important;
+                background-repeat: no-repeat !important;
+                pointer-events: none !important;
+                z-index: 1 !important;
+            }
+
+            /* Text node is safely clipped so TTS inline styles cannot flash the native emoji onscreen */
+            .h-mojis-text {
+                position: absolute !important;
+                width: 1px !important;
+                height: 1px !important;
+                padding: 0 !important;
+                margin: -1px !important;
+                overflow: hidden !important;
+                clip: rect(0, 0, 0, 0) !important;
+                white-space: nowrap !important;
+                border: 0 !important;
+                opacity: 0.01 !important;
+            }
+
+            /* Fast CSS selectors for styling */
             i .h-mojis, em .h-mojis, [style*="italic"] .h-mojis { transform: skewX(-12deg); }
             b .h-mojis, strong .h-mojis, [style*="bold"] .h-mojis {
                 transform: scale(1.1);
                 filter: drop-shadow(0.5px 0 0px currentColor);
             }
-            .h-mojis::selection { background: rgba(0,120,215,0.2) !important; }
+            .h-mojis::selection, .h-mojis *::selection { background: rgba(0,120,215,0.2) !important; }
         `;
         document.head.appendChild(style);
     }
@@ -471,7 +503,6 @@
         if (node.nodeType === 1) {
             if (FORBIDDEN.test(node.tagName) || node.isContentEditable || node.hasAttribute('data-h')) return;
 
-            // Array.from protects the loop if DOM changes during iteration
             const children = Array.from(node.childNodes);
             for (let i = 0; i < children.length; i++) {
                 walk(children[i]);
@@ -506,7 +537,7 @@
         const wrapper = document.createElement('span');
         wrapper.className = 'h-mojis-wrapper';
         wrapper.setAttribute('data-h', '1');
-        wrapper._hOriginalTextNode = textNode; // Link it back for garbage collection
+        wrapper._hOriginalTextNode = textNode;
 
         let lastIdx = 0;
         emojiRegex.lastIndex = 0;
@@ -518,12 +549,20 @@
 
             const url = emojiMap[match];
             if (url) {
-                // Using <img> with alt text ensures PERFECT native text selection
-                const img = document.createElement('img');
-                img.className = 'h-mojis';
-                img.src = url;
-                img.alt = match;
-                wrapper.appendChild(img);
+                const span = document.createElement('span');
+                span.className = 'h-mojis';
+                // Pass the image URL securely via CSS variable
+                span.style.setProperty('--h-emoji-bg', `url('${url}')`);
+                span.setAttribute('role', 'img');
+                span.setAttribute('aria-label', match);
+
+                // Create an inner span to hide the text strictly while keeping it accessible for TTS
+                const innerText = document.createElement('span');
+                innerText.className = 'h-mojis-text';
+                innerText.textContent = match;
+
+                span.appendChild(innerText);
+                wrapper.appendChild(span);
             } else {
                 wrapper.appendChild(document.createTextNode(match));
             }
@@ -537,7 +576,6 @@
         textNode._hWrapper = wrapper;
 
         // VDOM TRICK: Don't remove the text node, just empty it.
-        // React keeps its reference, preventing the duplication loop.
         textNode.nodeValue = '';
         parent.insertBefore(wrapper, textNode);
     }
@@ -560,7 +598,6 @@
             if (m.type === 'childList') {
                 m.addedNodes.forEach(walk);
             } else if (m.type === 'characterData') {
-                // If a framework updates the text node, un-process it and walk it again
                 processedNodes.delete(m.target);
                 if (m.target.parentNode) walk(m.target.parentNode);
             }
