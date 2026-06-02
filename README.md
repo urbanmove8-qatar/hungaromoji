@@ -1,6 +1,6 @@
 # Hungaromoji
 
-![Hungaromoji Logo](https://github.com/user-attachments/assets/986f3416-fd22-4e2c-bf50-2bd04fa001d3)
+![Hungaromoji Screenshot](https://github.com/user-attachments/assets/986f3416-fd22-4e2c-bf50-2bd04fa001d3)
 
 **The Definitive Open-Source Hungarian Emoji Engine**
 
@@ -21,11 +21,12 @@ Unlike “black box” closed-source software that demands personal data or ID v
 
 ## ✨ Features
 
-- **Cultural Authenticity:** Supports unique Hungarian emojis, including the 100 HUF banknote, MÁV transport icons (Bzmot), and traditional book covers.  
-- **Dynamic Real-Time Updates:** Utilizes a high-performance MutationObserver to automatically process new content without manual refreshes.  
-- **Optimized Performance:** Uses WeakSet node tracking and regex pre-compilation to ensure zero lag and prevent layout thrashing.  
-- **Historical Tribute:** Features an integrated tribute to the heroes of the 1956 Revolution, ensuring software remains a tool for remembrance and freedom.  
-- **Fluid Layouts:** Inline images are CSS-optimized to scale perfectly with text typography (1.1em).  
+- **Cultural Authenticity:** Supports unique Hungarian emojis, including the 100 HUF coin, MÁV transport icons (Bzmot, V43), Haragos Pista, Negro cukor, and traditional book covers (*Tüskevár*, *Vuk*, *Egri csillagok*).  
+- **Bulletproof Accessibility:** Features advanced CSS-based styling (`::before` pseudo-elements and strict text clipping) to ensure seamless Text-To-Speech (TTS) and screen reader support without visual highlight glitches.
+- **VDOM-Safe & React-Ready:** Intelligent DOM manipulation with safe wrapper replacement and active garbage collection for orphaned nodes ensures it plays nicely with modern UI frameworks (like React) without causing crashes.
+- **Dynamic Real-Time Updates:** Utilizes a high-performance `MutationObserver`, `WeakSet` node tracking, and regex pre-compilation to automatically process new content with zero lag.  
+- **Historical Tributes & Easter Eggs:** Features an integrated tribute to the heroes of the 1956 Revolution, alongside a special developer console celebration for the UEFA Budapest 2026 Finals!  
+- **Fluid Layouts:** Inline images are CSS-optimized to scale perfectly with text typography (`1.1em`).  
 
 ---
 
@@ -58,10 +59,8 @@ Add this to your HTML `<head>` or before the closing `</body>` tag for automatic
 <script src="https://cdn.jsdelivr.net/gh/urbanmove8-qatar/hungaromoji/emoji.js"></script>
 ```
 ### 2. Local Deployment
-If you prefer to host the script within your own infrastructure:
-
+If you prefer to host the script within your own infrastructure (Updated for v0.9.6.1):
 ```html
-<script src="js/hungaromoji.v0.9.6.js"></script>
+<script src="js/hungaromoji.v0.9.6.1.js"></script>
 ```
-
 “Szabadság és függetlenség!” — The Urbanmove 8 Team
