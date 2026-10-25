@@ -43,7 +43,7 @@ Unlike proprietary solutions that may function as black boxes or demand personal
 
 This project is licensed under the **Apache License 2.0**.  
 
-- [View Credits](https://github.com/urbanmove8-qatar/hungaromoji/blob/main/CREDITS.md)  
+- [View Credits](https://github.com/urbanmove8-qatar/hungaromoji-archives/blob/main/CREDITS.md)  
 - [View License](https://github.com/urbanmove8-qatar/hungaromoji/blob/main/LICENSE)  
 
 ---
